@@ -4,7 +4,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t Fydous/docker-react -f Dockerfile.dev .
+  - docker build -t fydous/docker-react -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true Fydous/docker-react npm run test
+  - docker run -e CI=true fydous/docker-react npm run test
